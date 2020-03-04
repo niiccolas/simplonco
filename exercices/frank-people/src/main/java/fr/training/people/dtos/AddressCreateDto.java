@@ -58,9 +58,10 @@ public class AddressCreateDto {
   @Override
   public String toString() {
     return "AddressCreateDto{" +
-            ", zipCode='" + zipCode + '\'' +
+            "country='" + country + '\'' +
             ", street='" + street + '\'' +
             ", city='" + city + '\'' +
+            ", zipCode='" + zipCode + '\'' +
             '}';
   }
 }

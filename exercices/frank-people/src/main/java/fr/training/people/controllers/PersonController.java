@@ -15,6 +15,7 @@ public class PersonController {
   @GetMapping("/id/{id}")
   public PersonGetDto getById(@PathVariable("id") Long id){
     PersonGetDto person = new PersonGetDto("Igot","Mcdemshoulders");
+    System.out.println("personGetDo called");
     return person;
   }
 
@@ -22,8 +23,7 @@ public class PersonController {
   public void create(@RequestBody @Valid PersonCreateDto personDto){
     String firstName = personDto.getFirstName();
     String lastName = personDto.getLastName();
-    LocalDate birthdate = personDto.getBirthDate();
-
+//    LocalDate birthdate = personDto.getBirthDate();
     System.out.println(personDto);
   }
 
